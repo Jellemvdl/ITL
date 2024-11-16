@@ -33,7 +33,7 @@ def findRightChild(t: str, i: int) -> int:
         return -1  # No right child
     return rightchild_pos  # Position of the right child
 
-
+print("Exercise 2.1, Left and Right Child: \n")
 t = '00000011111'
 print("Find position of left child of 00000011111 at index 0: ", findLeftChild(t, 0)) 
 print("Find position of right child of 00000011111 at index 0: ",  findRightChild(t, 0)) 
@@ -44,7 +44,7 @@ print("Find position of right child of 000110011 at index 0: ", findRightChild(t
 print("Find position of right child of 000110011 at index 1: ", findRightChild(t, 1))
 print("Find position of right child of 000110011 at index 4: ", findRightChild(t, 4))
 print("Find position of right child of 000110011 at index 5: ", findRightChild(t, 5))
-
+print("\n")
 
 
 def printSubTree(t: str, i: int, depth: int, child_type: str):
@@ -70,12 +70,14 @@ def printTree(t: str):
     # Start with the root node at index 0
     printSubTree(t, 0, 0, 'root')
 
+print("Exercise 2.2, printing Trees: \n")
 print("Printing tree 00011")
 printTree('00011')
 print("Printing tree 0000111")
 printTree('0000111')
 print("Printing tree 0010101")
 printTree('0010101')
+print("\n")
 
 def isValidTree(t: int) -> bool:
     t_bin_original = bin(t)[2:]
@@ -140,6 +142,7 @@ def isValidTree(t: int) -> bool:
 
 numbers = [31, 51, 341, 1829, 4903]
 
+print("Exercise 2.3 and 2.4, canonical representations: \n")
 for t in numbers:
     print(f"Test canonical representation for tree = {t}")
     print(isValidTree(t))
